@@ -1,0 +1,99 @@
+
+g00336171@eng111 MINGW64 ~
+$ cd c:/users/g00336171/git1
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ ls
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$  https://github.com/g003361711996/project.git
+bash: https://github.com/g003361711996/project.git: No such file or directory
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ echo "# Test1" >> README.md
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/g00336171/Git1/.git/
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git commit -m "first commit"
+[master (root-commit) d86f0fa] first commit
+ Committer: DARRAGH FREELEY - STUDENT <G00336171@gmit.ie>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git remote add origin https://github.com/g003361711996/Test1.git
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git push -u origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': g003361711996
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 235 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/g003361711996/Test1.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git add NewTest.txt
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git commit NewTest.txt -m Yo
+[master 92e9d2c] Yo
+ Committer: DARRAGH FREELEY - STUDENT <G00336171@gmit.ie>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 NewTest.txt
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git remote add origin https://github.com/g003361711996/Test1.git
+fatal: remote origin already exists.
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$ git push -u origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': g003361711996
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 291 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/g003361711996/Test1.git
+   d86f0fa..92e9d2c  master -> master
+Branch master set up to track remote branch master from origin.
+
+g00336171@eng111 MINGW64 /c/users/g00336171/git1 (master)
+$
